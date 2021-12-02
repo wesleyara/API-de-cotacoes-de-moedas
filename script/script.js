@@ -8,8 +8,6 @@ async function converter() {
       return res.json();
     })
     .then((moeda) => {
-      console.log(moeda);
-
       dolar = moeda.USDBRL.ask;
       euro = moeda.EURBRL.ask;
     });
@@ -21,9 +19,9 @@ async function converter() {
     let convValue = convSelect.options[convSelect.selectedIndex].value
 
         if (convValue === 'USD') {
-            input1.value = (dolarFixed * input).toFixed(2)
+            input1.value = (input / dolarFixed).toFixed(2)
         } else if (convValue === 'EUR') {
-            input1.value = (euroFixed * input).toFixed(2)
+            input1.value = (input / euroFixed).toFixed(2)
         }
 }
 
@@ -35,8 +33,6 @@ async function converter1() {
         return res.json();
       })
       .then((moeda) => {
-        console.log(moeda);
-  
         dolar = moeda.USDBRL.ask;
         euro = moeda.EURBRL.ask;
       });
@@ -48,9 +44,9 @@ async function converter1() {
       let convValue = convSelect.options[convSelect.selectedIndex].value
   
           if (convValue === 'USD') {
-              input1.value = (input / dolarFixed).toFixed(2)
+              input1.value = (dolarFixed * input).toFixed(2)
           } else if (convValue === 'EUR') {
-              input1.value = (input / euroFixed).toFixed(2)
+              input1.value = (euroFixed * input).toFixed(2)
           }
 
 }
