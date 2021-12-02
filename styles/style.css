@@ -77,3 +77,33 @@ a {
     float: left;
     margin-left: 50px;
 }
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 80%;
+    }
+
+    .container-footer {
+        width: 50%;
+    }
+
+    .contato {
+        float: none;
+    }
+
+    .linguagens {
+        float: none;
+        margin-top: 30px;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .select {
+        width: 75px;
+    }
+
+    .value {
+        width: 120px;
+    }
+}
