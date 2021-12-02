@@ -15,7 +15,7 @@ a {
 }
 
 .header {
-    background-color: #5C96F5;
+    background-color: #6C53FA;
     color: white;
     text-align: center;
     padding: 30px;
@@ -27,7 +27,7 @@ a {
     margin: auto;
     margin-top: 150px;
     margin-bottom: 150px;
-    background-color: #5C96F5;
+    background-color: #6C53FA;
     color: white;
     padding: 30px;
     border-radius: 5px;
@@ -50,7 +50,7 @@ a {
 }
 
 .description {
-    background-color: #5C96F5;
+    background-color: #6C53FA;
     border-top: 4px solid #53EBFA;
     color: white;
     padding: 30px;
@@ -58,7 +58,7 @@ a {
 
 .footer {
     border-top: 4px solid #53EBFA;
-    background-color: #5C96F5;
+    background-color: #6C53FA;
     color: white;
     padding: 30px;
 }
