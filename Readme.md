@@ -1,5 +1,6 @@
 # Coin Converter: Consumindo API de cotações de moedas.
 
+![Coin Converter img](https://user-images.githubusercontent.com/89321125/144520974-30201c9b-44a7-4554-9c50-6b848e9fe754.PNG)
 
 Link do site: <a href="https://coin-converter.netlify.app/">Coin Converter</a>
 
