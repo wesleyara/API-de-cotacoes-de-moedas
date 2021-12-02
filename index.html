@@ -9,8 +9,13 @@
     <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
+
+    <div class="header">
+        <h1>Coin Converter</h1>
+    </div>
+
     <div class="container">
-        <h1>Conversor de unidades</h1>
+        <h2>Insira o valor que deseja converter:</h2>
 
         <br>
 
@@ -18,19 +23,61 @@
             <option value="BRL">Real</option>
         </select>
 
-        <input class="value" type="number" name="valor" id="valor">
+        <input class="value" oninput="converter()" min="0" type="number" name="valor" id="valor">
 
-        <select class="select" name="moedaSelect" id="moedaSelect">
+
+        <br>
+        <select class="select" onchange="moedaSel(this.value)" name="moedaSelect" id="moedaSelect">
             <option value="USD">Dólar</option>
             <option value="EUR">Euro</option>
         </select>
 
-        <input class="button" type="button" value="Converter" onclick="converter()">
+        <input class="value" type="number" oninput="converter1()" min="0" name="valor" id="valor1">
 
-        <br>
-        <br>
+    </div>
 
-        Resultado: <span id="resultado"></span>
+    <div class="description">
+
+        <h2>Coin Converter: Consumindo API de cotações de moedas.</h2>
+        <br>
+        <p>
+            Este é o meu primeiro projeto consumindo uma API em JavaScript, nele eu desenvolvi um conversor de moedas consumindo a API do <a href="https://docs.awesomeapi.com.br/api-de-moedas">AwesomeAPI</a>.
+        </p>
+        <br>
+        <p>
+            O Coin Converter pode converter qualquer moeda para a nossa moeda nativa (BRL), utilizando uma API que está em constante atualização, nosso conversor sempre tem os valores atualizados das cotações de cada moeda, proporcionando uma maior fidelidade com os resultados das conversões!
+        </p>
+
+    </div>
+
+    <div class="footer">
+        <div class="container-footer">
+            <div class="contato">
+            <h2>Contato:</h2>
+            <br>
+            <a target="_blank" href="mailto:wesleyara.contato@gmail.com"><img alt="Wesley-GMAIL"
+                    src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a>
+            <a target="_blank" href="https://www.linkedin.com/in/wesley-gomes-de-araújo-534a66221/"><img alt="Wesley-LINKE"
+                    src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+            <a target="_blank" href="https://github.com/wesleyara"><img alt="Wesley-INSTA"
+                    src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a>
+
+            </div>
+            
+            <div class="linguagens">
+                <h2>Linguagens utilizadas:</h2>
+                <br>
+                <div style="display: inline_block;">
+                    <img align="center" alt="Wesley-JS"
+                        src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
+                    <img align="center" alt="Wesley-HTML"
+                        src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+                    <img align="center" alt="Wesley-CSS"
+                        src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+                </div>
+            </div>
+            
+        </div>
     </div>
     
     

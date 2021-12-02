@@ -4,18 +4,40 @@
     font-family: Helvetica, sans-serif;
 }
 
+body {
+    background-image: url(/images/backgroundimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+a {
+    color: white;
+}
+
+.header {
+    background-color: #5C96F5;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    border-bottom: 4px solid #53EBFA;
+}
+
 .container {
     width: 31%;
     margin: auto;
-    margin-top: 30px;
-    background-color: brown;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    background-color: #5C96F5;
     color: white;
     padding: 30px;
+    border-radius: 5px;
+    border: 4px solid #53EBFA;
 }
 
 .select {
     padding: 10px;
     border: none;
+    width: 100px;
 }
 
 .button {
@@ -25,4 +47,33 @@
 
 .value {
     padding: 10px;
+}
+
+.description {
+    background-color: #5C96F5;
+    border-top: 4px solid #53EBFA;
+    color: white;
+    padding: 30px;
+}
+
+.footer {
+    border-top: 4px solid #53EBFA;
+    background-color: #5C96F5;
+    color: white;
+    padding: 30px;
+}
+
+.container-footer {
+    width: 53%;
+    margin: auto;
+    overflow: auto;
+}
+
+.contato {
+    float: left;
+}
+
+.linguagens {
+    float: left;
+    margin-left: 50px;
 }
