@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+.container {
+    width: 31%;
+    margin: auto;
+    margin-top: 30px;
+    background-color: brown;
+    color: white;
+    padding: 30px;
+}
+
+.select {
+    padding: 10px;
+    border: none;
+}
+
+.button {
+    padding: 11px;
+    border: none;
+}
+
+.value {
+    padding: 10px;
+}
