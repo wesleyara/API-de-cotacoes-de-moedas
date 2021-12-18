@@ -37,7 +37,7 @@ a {
 .select {
     padding: 10px;
     border: none;
-    width: 100px;
+    width: 120px;
 }
 
 .button {
@@ -98,12 +98,12 @@ a {
     }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 372px) {
     .select {
-        width: 75px;
+        width: 115px;
     }
 
     .value {
-        width: 120px;
+        width: 100px;
     }
 }

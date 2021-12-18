@@ -19,20 +19,19 @@
 
         <br>
         <center>
+        <select class="select" onchange="moedaSel(this.value)" name="moedaSelect" id="moedaSelect">
+            <option value="USD">Dólar</option>
+            <option value="EUR">Euro</option>
+            <option value="ARS">Pesos Arg.</option>
+        </select>
+
+        <input class="value" type="number" oninput="converter1()" min="0" name="valor" id="valor1">
+        <br>
         <select class="select" name="moedaBase" id="moedaBase">
             <option value="BRL">Real</option>
         </select>
 
         <input class="value" oninput="converter()" min="0" type="number" name="valor" id="valor">
-
-
-        <br>
-        <select class="select" onchange="moedaSel(this.value)" name="moedaSelect" id="moedaSelect">
-            <option value="USD">Dólar</option>
-            <option value="EUR">Euro</option>
-        </select>
-
-        <input class="value" type="number" oninput="converter1()" min="0" name="valor" id="valor1">
         </center>
     </div>
 
