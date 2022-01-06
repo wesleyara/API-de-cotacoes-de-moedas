@@ -1,5 +1,5 @@
 let url =
-  "https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,ARS-BRL,CAD-BRL";
+  "https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,ARS-BRL,CAD-BRL,JPY-BRL";
 
 async function converter() {
   let input = document.getElementById("valor").value;
@@ -13,12 +13,14 @@ async function converter() {
       euro = moeda.EURBRL.ask;
       pesosArgentinos = moeda.ARSBRL.ask;
       dolarCanadense = moeda.CADBRL.ask;
+      ieneJapones = moeda.JPYBRL.ask;
     });
 
   let dolarFixed = Number(dolar).toFixed(2);
   let euroFixed = Number(euro).toFixed(2);
   let pesosArgentinosFixed = Number(pesosArgentinos).toFixed(2);
   let dolarCanadenseFixed = Number(dolarCanadense).toFixed(2);
+  let ieneJaponesFixed = Number(ieneJapones).toFixed(2);
 
   let convSelect = document.getElementById("moedaSelect");
   let convValue = convSelect.options[convSelect.selectedIndex].value;
@@ -31,6 +33,8 @@ async function converter() {
     input1.value = (input / pesosArgentinosFixed).toFixed(2);
   } else if (convValue === "CAD") {
     input1.value = (input / dolarCanadenseFixed).toFixed(2);
+  } else if (convValue === "JPY") {
+    input1.value = (input / ieneJaponesFixed).toFixed(2);
   }
 }
 
@@ -46,12 +50,14 @@ async function converter1() {
       euro = moeda.EURBRL.ask;
       pesosArgentinos = moeda.ARSBRL.ask;
       dolarCanadense = moeda.CADBRL.ask;
+      ieneJapones = moeda.JPYBRL.ask;
     });
 
   let dolarFixed = Number(dolar).toFixed(2);
   let euroFixed = Number(euro).toFixed(2);
   let pesosArgentinosFixed = Number(pesosArgentinos).toFixed(2);
   let dolarCanadenseFixed = Number(dolarCanadense).toFixed(2);
+  let ieneJaponesFixed = Number(ieneJapones).toFixed(2);
 
   let convSelect = document.getElementById("moedaSelect");
   let convValue = convSelect.options[convSelect.selectedIndex].value;
@@ -64,6 +70,8 @@ async function converter1() {
     input1.value = (pesosArgentinosFixed * input).toFixed(2);
   } else if (convValue === "CAD") {
     input1.value = (input * dolarCanadenseFixed).toFixed(2);
+  } else if (convValue === "JPY") {
+    input1.value = (input * ieneJaponesFixed).toFixed(2);
   }
 }
 
